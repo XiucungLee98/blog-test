@@ -1,25 +1,31 @@
 ### 1.HTML是谁发明的
 
-是李爵士（Berners-Lee）发明的
+是李爵士（Berners-Lee）于1990年发明的
 
 ### 2.HTML起手应该写什么
 
  ```html
-<!DOCTYPE html>       <!--说明文件的类型是html-->    
-<html lang="zh-CN">     <!--说明页面语言是中国地区的中文-->
+<!DOCTYPE html> 
+<html lang="zh-CN">    
   <head>
-    <meta charset="UTF-8" />          <!--说明页面为UTF8编码-->
+    <meta charset="UTF-8" />         
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />  
-      <!--说明要用最新版本的IE浏览-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!--禁止页面缩放-->
     <title>Document</title>
   </head>
   <body></body>
 </html>
  ```
 
+`<!DOCTYPE html>`说明文件的类型是html
 
+`<html lang="zh-CN">`说明页面语言是中国地区的中文
+
+`<meta charset="UTF-8" />` 说明页面为UTF8编码
+
+`<meta content="IE=edge" /> ` 说明要用最新版本的IE浏览
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0" />` 禁止页面缩放
 
 ### 3.常用的表章节的标签
 
@@ -35,18 +41,18 @@
 
 ### 4.全局属性有哪些
 
-- class  
-- contenteditable  （设置文本可编辑，可以与display:block配合，
+- class  （类选择器）
+- contenteditable  （设置元素可编辑，可以与display:block配合，
 
 ​       将隐藏的style{ }显示，达到让用户自己编辑样式的效果）
 
-- hidden 
+- hidden （隐藏元素）
 - id（不到万不得已不要用id属性，因为不能保证元素的唯一性，尽量用class）
 
 - style（HTML的属性style优先级比css高，Javascript中设置的style优先级最高）
 - tabindex（控制按tab键时选中元素的顺序，tabindex=0时最后一个访问，tabindex=-1时永不访问）
 
-- title
+- title （鼠标悬停显示文字内容）
 
 
 
@@ -54,15 +60,15 @@
 
 * ol+li
 
-  * ol：ordered list 有序列表
+  ol：ordered list 有序列表
 
-  * 标有数字顺序
+  标有数字顺序
 
 * ul+li
 
-  * ul：unordered list 无序列表
+  ul：unordered list 无序列表
 
-  * 标有圆点
+  标有圆点
 
 * dl+dt+dd
 
@@ -74,33 +80,34 @@
 
 * pre
 
-  * 保留多个空格，回车或者tab，如果不用pre标签包裹的文字，
+  保留多个空格，回车或者tab，如果不用pre标签包裹的文字，
 
-    输入再多空格也不会对格式造成影响。
+  输入再多空格也不会对格式造成影响。
 
 * code
 
-  * 用来包裹代码（这样写出的代码每个字母是等宽的，便于观看和修改）。
+  用来包裹代码（这样写出的代码每个字母是等宽的，便于观看和修改）。
 
 * hr
 
-  * 分割线
+  分割线
 
 * em
 
-  * 表示语气上的强调
+  表示语气上的强调
 
 * strong
 
-  * 表示内容本身的重要性
+  表示内容本身的重要性
 
 * quote
 
-  * 内联引用
+  内联引用
 
 * blockquote
 
-  * 块级引用
+  块级引用
 
 * a
-  * 超链接
+  
+  超链接
